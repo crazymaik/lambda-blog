@@ -1,0 +1,45 @@
+===================
+Top-Level Templates
+
+Templates that are referenced inside the application. All
+other templates are just referenced from this templates.
+
+  * blog
+  * site
+  * 404
+
+See http://www.antlr.org/wiki/display/ST/Five+minute+Introduction
+for an introduction into string templates.
+
+=========================
+Attributes and Properties
+
+Atttributes and properties that are accessible in the
+templates.
+
+  * every template
+    * tags - alphabetically-sorted list of tags
+      * id - url reference: /t/id
+      * count - number of posts that have the tag
+    * authors - unsorted list of authors
+      * name - full name
+      * id - url reference: /a/id
+      * nick - nick name
+      * mail - mail address (not obfuscated)
+	* sites - tree of sites
+	  * id - url reference: /s/id
+	  * title - menu title
+	  * hasContent - if the site has displayable content, i.e. should be linkable
+	  * subs - children sites
+    * pageTitle - title for the html header (currently not forwared)
+  * blog
+    * posts - chronically-sorted list of blogs to display
+      * title
+      * authors - list of post authors, see above for properties
+      * tags - list of post tags ids, see tags.id
+      * content - html content of post
+  * site
+    * content - html content of site
+  * 404
+    * invalidUrl - the requested url without host/ip
+

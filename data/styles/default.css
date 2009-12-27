@@ -1,0 +1,206 @@
+@import url("/styles/common.css");
+
+/* standard element settings */
+
+body {
+    color:#272727;
+    background-color: #aaa;
+	background-attachment:fixed;
+	/* background shadow
+	background-image:url(/styles/bg_shadow.jpg);
+	background-position:center top;
+	background-repeat:repeat-y;*/
+	background-image:url(/styles/pattern_box.png);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+a {
+    color: #0066CC;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #114477;
+    text-decoration: underline;
+}
+
+/* all divs */
+
+#page {
+    width: 1000px;
+	background-color: #fff;
+	border: 1px solid #b5b5b5;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header {
+    background-color: #5581C0;
+    padding: 5px 5px 5px 5px;
+}
+
+#header a {
+    color: #fafafa;
+}
+
+#header h1 {
+
+}
+
+#header h3 {
+    color: #eaeaea;
+    font-style: italic;
+}
+
+#sidebar {
+    width: 210px;
+    float: right;
+    padding-top: 5px;
+    font-size: small;
+}
+
+#sidebar .entry {
+    margin-top: 15px;
+}
+
+#sidebar h3 {
+	border-bottom: thin solid #959595;
+    font-weight: bold;
+    padding-bottom: 4px;
+	margin-bottom: 10px;
+}
+
+#sidebar ul {
+	padding-left: 20px;
+	list-style: square;
+}
+
+#clearer {
+    clear: both;
+    height: 1px;
+}
+
+#footer {
+    text-align: center;
+    border-top: thin solid #bbb;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* content and pandoc specific style */
+
+#content {
+    width: 780px;
+	padding-left: 8px;
+}
+
+#content .post {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#content .comments {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#content #index {
+    text-align: center;
+}
+
+#content h1 {
+	margin-top: 16px;
+	font-size: 22px;
+}
+
+#content h2 {
+	margin-top: 13px;
+	font-size: 19px;
+}
+
+#content h3 {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#content h4 {
+	margin-top: 8px;
+	font-size: 13px;
+}
+
+#content h5 {
+	margin-top: 5px;
+	font-size: 10px;
+}
+
+#content p {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#content blockquote {
+	margin-left: 20px;
+	margin-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-left: thin dashed #333;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+#content pre {
+	margin-left: 20px;
+	margin-right: 40px;
+	border: thin dashed #ccc;
+	background-color: #eeeef2;
+	padding: 5px 5px 5px 5px;
+}
+
+/* syntax highlighting */
+
+
+#content table {
+	margin-left: 20px;
+	margin-right: 40px;
+	border: thin dashed #ccc;
+	background-color: #eeeef2;
+}
+
+#content table pre {
+	margin: 0;
+	border: 0;
+}
+
+td.lineNumbers {
+	border-right: 1px solid #AAAAAA;
+	text-align: right;
+	color: #AAAAAA;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+td.sourceCode {
+	padding-left: 5px;
+	width: 100%;
+}
+
+
+pre.sourceCode { }
+pre.sourceCode span.Normal { }
+pre.sourceCode span.Keyword { color: #007020; font-weight: bold; }
+pre.sourceCode span.DataType { color: #902000; }
+pre.sourceCode span.DecVal { color: #40a070; }
+pre.sourceCode span.BaseN { color: #40a070; }
+pre.sourceCode span.Float { color: #40a070; }
+pre.sourceCode span.Char { color: #4070a0; }
+pre.sourceCode span.String { color: #4070a0; }
+pre.sourceCode span.Comment { color: #408090; font-style: italic; }
+pre.sourceCode span.Others { color: #007020; }
+pre.sourceCode span.Alert { color: red; font-weight: bold; }
+pre.sourceCode span.Function { color: #06287e; }
+pre.sourceCode span.RegionMarker { }
+pre.sourceCode span.Error { color: red; font-weight: bold; }
+

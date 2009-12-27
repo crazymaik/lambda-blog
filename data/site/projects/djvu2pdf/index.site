@@ -1,0 +1,9 @@
+djvu2pdf
+========
+
+A small tool to convert .djvu files to .pdf files.  Works out of the box
+under Linux, BSD and MacOS. Windows users need to install
+[cygwin](http://www.cygwin.com).
+
+[Download Version 0.7.3](/static/site/djvu2pdf/djvu2pdf-0.7.3.tar.gz)
+
